@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------------*/
+/*--------------- End Reset ---------------*/
+/*-----------------------------------------*/
+
+/*  Global Styles
+-------------------*/
+html {
+    /* rem Fix: 1rem = 10px */
+    font-size: 62.5%;
+
+    /* (1/2) - Include Border 
+    in Total Box Size */
+    box-sizing: border-box;
+
+    /* Typography */
+    font-family: 'Roboto', sans-serif;
+}
+*,
+*:before,
+*:after {
+    /* (2/2) - Include Border
+    in Total Box Size */
+    box-sizing: inherit;
+}
+body {
+    max-width: 1400px;
+    width: 100%;
+}
+h2 {
+    /* Typography */
+    font-size: 3rem;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+p, span {
+    /* Typography */
+    font-size: 1.6rem;
+}
+p {
+    /* Typography */
+    color: grey;
+}
+
+
+/*              Header   
+------------------------------------*/
+header {
+    /* Header Layout */
+    padding: 2rem 4rem;
+
+    /* Design Styles*/
+    /* background-color: rgb(228, 231, 255); */
+    background-color: white;
+}
+
+
+/*  Navigation Bar
+--------------------*/
+nav {
+    /* Nav Layout */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.source-logo {
+    /* Nav Layout */
+    float: left;
+
+    /* Typography */
+    color:rgb(43, 50, 94);
+    font-size: 2rem;
+    font-weight: 500;
+
+    /* Design Styles */
+    padding: 1rem 0;
+}
+nav > ul {
+    /* Nav Layout */
+    display: inline-block;
+}
+nav li {
+    /* Nav Layout */
+    float: left;
+    padding: 0 2rem;
+
+    /* Typography */
+    color: grey;
+    font-size: 1.6rem;
+
+    /* Design Styles*/
+    list-style: none;
+}
+nav li > a {
+    /* Typography */
+    color: grey;
+
+    /* Design Styles */
+    padding: 1.2rem;
+}
+nav > a {
+    /* Nav Layout */
+    float: right;
+
+    /* Typography */
+    color: white;
+    font-size: 1.6rem;
+        
+    /* Design Styles */
+    background-color: rgb(43, 50, 94);
+    padding: 1.2rem 2rem;
+    border-radius: 2px;
+}
+
+
+/* Header Main Block
+---------------------*/
+.main-block-container {
+    /* Float Container */
+    display: flow-root;
+
+    /* Layout */
+    margin: 5rem 0;
+}
+.mainblock1 {
+    /* Layout */
+    float: left;
+    max-width: 40%;
+    padding: 5rem 0 10.783rem 6.5rem;
+}
+.mainblock2 {
+    /* Layout */
+    float: right;
+    height: 50rem;
+    width: auto;
+    transform: TranslateX(4rem);
+}
+
+
+/* .mainblock1 Components
+--------------------------*/
+.mainblock1 .tagline {
+    /* Layout */
+    display: inline-block;
+    margin-bottom: 2rem;
+
+    /* Design */
+    color: rgb(43, 50, 94);
+    font-weight: bold;
+}
+.mainblock1 h2, p {
+    /* Layout */
+    max-width: 80%
+}
+.mainblock1 h2 {
+    /* Layout */
+    padding-bottom: 1rem;
+
+    /* Typography */
+    font-size: 4rem;
+    color: rgb(43, 50, 94);
+    font-weight: 700;
+}
+.mainblock1 p {
+    /* Typography */
+    color: rgb(43, 50, 94);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.mainblock1 input {
+    /* Layout */
+    margin: 2rem 0;
+
+    /* Design */
+    background-color: rgb(228, 231, 255); 
+    border: none;
+    padding: 1.2rem 8rem 1.2rem 1rem;
+}
+.mainblock1 input::placeholder {
+    /* Typography */
+    color: rgb(43, 50, 94);
+}
+.mainblock1 a {
+    /* Typography */
+    color: white;
+    font-size: 1.5rem;
+
+    /* Layout */
+    margin-left: -1rem;
+
+    /* Design */
+    background-color: rgb(43, 50, 94);
+    border-radius: 2px;
+    padding: 1.2rem 2rem;
+}
+
+
+/* Header Minor Block
+----------------------*/
+.header-minor-block {
+    /* Layout */
+    clear: both;
+    display: flow-root;
+    padding: 5rem 0 5rem 6.5rem;
+}
+.header-minor-block > section {
+    /* Layout */
+    float: left;
+    width: 25%;
+}
+.header-minor-block i {
+    /* Layout */
+    padding-bottom: 2rem;
+
+    /* Typography */
+    font-size: 3rem;
+}
+.header-minor-block h5 {
+    /* Layout */
+    margin-bottom: 1rem;
+
+    /* Typography */
+    color:rgb(43, 50, 94);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.header-minor-block a {
+    /* Layout */
+    padding: 2rem 0;
+
+    /* Typography */
+    color: rgb(43, 50, 94);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/*         Responsive Styles   
+------------------------------------*/
+@media all and (max-width: 1125px) {
+    .mainblock1 {
+        max-width: 100%;
+    }
+    .header-minor-block {
+        padding: 0;
+    }
+}
+@media all and (max-width: 800px) {
+    nav li {
+        padding: 0;
+    }
+    nav li > a {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+@media all and (max-width:690px) {
+    .mainblock2 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Global styles
+    -----------------*/
+    header {
+        /* Layout */
+        padding: 1rem;
+    }
+}
+
+
+/*          Mobile Layout
+----------------------------------*/
+@media all and (max-width: 550px) {
+    /* Global styles
+    -----------------*/
+    header {
+        /* Layout */
+        padding: 0;
+    }
+
+    /* Nav Bar Styles
+    ------------------*/
+
+    nav {
+        /* Layout  (Phone Style) */
+        display: flow-root;
+        height: 8rem;
+        padding: 1rem 0;
+
+        /* Design */
+        border-bottom: 1px solid grey;
+    }
+    nav > ul, a {
+        /* Layout */
+        display: none;
+    }
+    nav > .source-logo {
+        /* Layout */
+        float: none;
+        display: block;
+        height: 100%;
+
+        /* Typography */
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+
+    /* Main Block Styles
+    ---------------------*/
+    .main-block-container {
+        /* Layout */
+        margin: 1rem 3rem;
+    }
+    .mainblock1 {
+        /* Layout */
+        padding: 1rem 0;
+    }
+    .mainblock1 h2, .mainblock1 p {
+        /* Layout */
+        max-width: 100%;
+    }
+    .mainblock1 input, .mainblock1 a {
+        /* Layout */
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 1rem ;
+        margin: 1rem 0;
+    }
+    .mainblock2 {
+        width: 110%;
+    }
+
+    /* Minor Block Styles
+    ----------------------*/
+    .header-minor-block  {
+        padding: 0 2rem 0 2rem;
+    }
+    .header-minor-block section {
+        margin: 0 auto;
+        /* Layout */
+        float: left;
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+    .header-minor-block section:nth-of-type(2) {
+        float: right;
+    }
+    .header-minor-block section:nth-of-type(3) {
+        clear: both;
+    }
+    .header-minor-block section:nth-of-type(4) {
+        float: right;
+    }
+    .header-minor-block p {
+        max-width: 95%;
+    }
+}
+
+/* Tiny Mobile Layout
+-----------------*/
+@media all and (max-width: 300px) {
+    html {
+        /* Downscale All Rems
+            for that stupid
+            Galaxy Fold screen */
+        font-size: 50%;
+    }
+    .mainblock1 h2 {
+        /* Typography */
+        font-size: 3.5rem;
+    }
+}
